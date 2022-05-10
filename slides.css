@@ -1,0 +1,600 @@
+/* Custom fonts */
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono|Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:300, 300i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos&family=Work+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos&family=Work+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
+
+
+
+
+/* Turn off slide numbers */
+/* Don't want them on videos! */
+.remark-slide-number {
+  position: inherit;
+}
+
+.remark-slide-number .progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  height: 6px;
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: #59c6da;
+}
+
+/* colors */
+:root {
+/* Fonts */
+  --text-font-family: 'Open Sans', sans-serif;
+  --text-chalmers-font-family: 'Open Sans', sans-serif;
+  --text-font-is-google: 1;
+  --text-font-family-fallback: 'Open Sans', sans-serif;
+  --text-font-base: 'Open Sans', sans-serif;
+  --header-font-family: 'Open Sans', sans-serif;
+  --header-font-is-google: 1;
+  --code-font-family: 'Open Sans', sans-serif;
+  --code-font-is-google: 1;
+  --base-font-size: 20px;
+  --text-font-size: 2.5rem;
+  --code-font-size: 20px;
+  --code-inline-font-size: 1em;
+  --header-h1-font-size: 3.5rem;
+  --header-h2-font-size: 2rem;
+  --header-h3-font-size: 1.5rem;
+  
+  /* Colors */
+  --text-color: #000000;
+  --header-color: #504556;
+  --background-color: #e9ecec;
+  --link-color: #ebdb00;
+  --text-bold-color: #504556;
+  --code-highlight-color: #ebdb00;
+  --inverse-text-color: #ebdb00;
+  --inverse-background-color: #504556;
+  --inverse-header-color: #ebdb00;
+  --title-slide-background-color: #e9ecec;
+  --title-slide-text-color: #504556;
+  --header-background-color: #A7D5E8;
+  --header-background-text-color: #002b36;
+  --purple: #504556;
+  --yellow: #ebdb00;
+}
+  
+/* Font colors */
+.yellow {
+  color: var(--yellow);
+}
+
+.green-back {
+  color: var(--green-back);
+}
+
+.dark-green {
+  color: var(--dark-green);
+}
+
+.purple {
+  color: var(--purple);
+}
+
+.dark-gray {
+  color: var(--dark-gray);
+}
+
+.link_style {
+  color: "#447178";
+}
+
+.off-white {
+  color: var(--background-color);
+}
+
+.reduced_opacity {
+  opacity: 0.5;
+}
+
+/* Title slide customization */
+.title-slide h1, h2, h3 {
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--dark-gray);
+}
+
+.title-slide h2 {
+  color: var(--green);
+}
+
+.title-slide h3 {
+  color: var(--beige);
+  font-size: 130%;
+}
+
+.title-slide a {
+  color: var(--gray);
+}
+
+/* Alignment */
+.right{
+  text-align: right;
+}
+.center{
+  text-align: center;
+}
+
+/* Margins around headers */
+/* To make the most of the slide real estate */
+
+html {
+  font-size: var(--base-font-size);
+}
+
+body {
+  font-family: var(--text-font-family), var(--text-font-family-fallback), var(--text-font-base);
+  font-weight: normal;
+  color: var(--text-color);
+}
+h1{
+  font-family: var(--header-font-family);
+  font-weight: bold;
+  color: var(--header-color);
+}
+
+h2 {
+  font-family: var(--text-font-family);
+  font-weight: bold;
+  color: var(--header-color);
+  line-height: 1em;
+  padding-top: 20px;
+  
+}
+
+h3 {
+  font-family: var(--text-font-family);
+  font-weight: bold;
+  color: var(--header-color);
+  line-height: 1em;
+  padding-top: 5px;
+  
+}
+
+
+.remark-slide-content {
+  background-color: var(--background-color);
+  font-size: 1rem;
+  padding: 16px 64px 6px 64px;
+  width: 100%;
+  height: 100%;
+}
+
+.remark-slide-content h1 {
+  font-size: var(--header-h1-font-size);
+}
+.remark-slide-content h2 {
+  font-size: var(--header-h2-font-size);
+}
+.remark-slide-content h3 {
+  font-size: var(--header-h3-font-size);
+  line-height: 1em;
+
+}
+.remark-code, .remark-inline-code {
+  font-family: var(--code-font-family);
+}
+.remark-code {
+  font-size: var(--code-font-size);
+}
+.remark-inline-code {
+  font-size: var(--code-inline-font-size);
+  color: var(--code-highlight-color);
+}
+.remark-slide-number {
+  color: #0b2a38;
+  opacity: 1;
+  font-size: 0.9em;
+}
+strong { color: var(--text-bold-color); }
+a, a > code {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.remark-code-line-highlighted {
+  background-color: var(--code-highlight-color);
+}
+.inverse {
+  background-color: var(--inverse-background-color);
+  color: var(--inverse-text-color);
+  
+}
+.inverse h1, .inverse h2, .inverse h3 {
+  color: var(--inverse-header-color);
+}
+
+.title-slide, .title-slide h1, .title-slide h2, .title-slide h3 {
+  color: var(--title-slide-text-color);
+}
+.title-slide {
+  background-color: var(--title-slide-background-color);
+}
+
+/* Font sizes */
+.huge {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 350%;
+   font-weight: bold;
+   color: var(--purple);
+}
+
+.larger {font-size: 300%;
+         font-weight: bold;
+         font-family: 'Open Sans', sans-serif;
+         color: var(--inverse-text-color);
+}
+
+.large { font-size: 200% }
+.bigger { font-size: 150% }
+.big { font-size: 115% }
+.midi { font-size: 85% }
+.small { font-size: 70% }
+.xsmall { font-size: 65% }
+.tiny { font-size: 50% }
+.bold { font-weight: bold}
+.midi .remark-code { font-size: 85%; }
+.small .remark-code { font-size: 70%; }
+.xsmall .remark-code { font-size: 65%; }
+.tiny .remark-code { font-size: 50%; }
+
+/* Handwriting */
+.hand{
+  font-family: 'Indie Flower', cursive;
+  font-size: 100%;
+}
+
+/*Alternative two-column layouts*/
+.column {
+  float: left;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+.right ~ * {
+  clear: both;
+}
+
+  /*Left 70% - Right 30% */
+  
+.pull-left {
+  width: 50%;
+  float: left;
+}
+
+.pull-right {
+  width: 50%;
+  float: right;
+}
+
+.pull-right ~ * {
+  clear: both;
+}
+
+  /*Left 70% - Right 30% */
+  
+.pull-left-3 {
+  width: 30%;
+  float: left;
+}
+
+.pull-center-3 {
+  width: 30%;
+  float: center;
+}
+
+.pull-right-3 {
+  width: 30%;
+  float: right;
+}
+
+.pull-right-3 ~ * {
+  clear: both;
+}
+
+  /*Left 70% - Right 30% */
+.pull-left-wide {
+  width: 70%;
+  float: left;
+}
+.pull-right-narrow {
+  width: 27%;
+  float: right;
+}
+.pull-right-narrow ~ * {
+  clear: both;
+}
+
+  /*Left 30% - Right 70% */
+.pull-left-narrow {
+  width: 30%;
+  float: left;
+}
+.pull-right-wide {
+  width: 67%;
+  float: right;
+}
+.pull-right-wide ~ * {
+  clear: both;
+}
+
+/* Footnote */
+.footnote {
+  padding-left: 10px;
+}
+
+.footnote {
+  position: absolute;
+  bottom: 60px;
+  padding-right: 3em;
+  font-size: 0.9em;
+  border-top: 3px solid var(--inverse-header-color);
+}
+
+
+
+/* Footer */
+
+
+div.my-footer {
+    border-top: 3px solid var(--inverse-header-color);
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+div.my-footer span {
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: var(--inverse-header-color);
+}
+
+div.my-footer a {
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+/* Square bullets for lists */
+
+ul{
+  list-style-type: square;
+}
+
+/* Custom boxes */
+
+.question, .your-turn, .tip {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  color: #1c3834;
+  font-weight: bold;
+}
+
+.question{
+  border-left: solid 5px var(--green);
+  background-color: var(--green-faint);
+}
+
+.tip {
+  border-left: solid 5px var(--pink);
+  background-color: var(--pink-faint);
+}
+
+.your-turn {
+  border-left: solid 6px var(--yellow);
+  background-color: var(--purple);
+  color: var(--yellow);
+  font-weight: bold;
+  font-family: 'Indie Flower', cursive;
+  font-size: 100%;
+  text-align: center;
+  
+}
+
+
+/* Quotes */
+blockquote {
+  border-left: solid 5px lightgray;
+  padding-left: 1em;
+}
+
+/* Embedded images */
+img, video, iframe {
+  max-width: 100%;
+}
+
+/* Image overlay */
+.imageoverlay {
+  position: absolute;
+  top: 10%;
+  left: 65%;
+  border: 1px solid #ddd;
+}
+
+/* Logo */
+.remark-slide-content:after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    right: 1100px;
+    height: 60px;
+    width: 81px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("img/Image2.png");
+}
+
+/* Media */
+@page { margin: 0; }
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+/* Datatable headers */
+div.datatables {
+    color: #504556;
+}
+
+.remark-slide table {
+  margin: auto;
+  border-top: 1px solid #8A8A8A;
+  border-bottom: 1px solid #8A8A8A;
+}
+
+.remark-slide table thead th {
+  border-bottom: 1px solid #8A8A8A;
+}
+
+th, td {
+  padding: 5px;
+}
+
+.remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) {
+  background: #b9b4bb;
+}
+
+table.dataTable tbody {
+  background-color: var(--background-color);
+}
+
+table.dataTable.display tbody tr.odd {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+table.dataTable.display tbody tr.even {
+  background-color: #b9b4bb;
+}
+
+table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+  color: var(--text-color);
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  color: var(--text-color) !important;
+}
+
+.reduced_opacity {
+  opacity: 0.5;
+}
+
+/*column */
+.column {
+    float: left;
+    position: relative;
+    width: 20%;
+  
+    /*for demo purposes only */
+    background: #f2f2f2;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+}
+
+.column-offset-1 {
+    left: 20%;
+}
+.column-offset-2 {
+    left: 40%;
+}
+.column-offset-3 {
+    left: 60%;
+}
+.column-offset-4 {
+    left: 80%;
+}
+
+.column-inset-1 {
+    left: -20%;
+}
+.column-inset-2 {
+    left: -40%;
+}
+.column-inset-3 {
+    left: -60%;
+}
+.column-inset-4 {
+    left: -80%;
+}
+
+.split-1-2-1>.column:first-of-type {
+  width: 25%; height: 100%; position: absolute; top: 0; left: 0; 
+}
+.split-1-2-1>.column:nth-of-type(2) {
+  width: 50%; height: 100%; position: absolute; top: 0; left: 25%;
+}
+.split-1-2-1>.column:nth-of-type(3) {
+  width: 25%; height: 100%; position: absolute; top: 0; right: 0;
+}
+
+.split-main2>.row:first-of-type { 
+  height: 15%; width: 100%; position: absolute; top: 0; left: 0;
+}
+.split-main2>.row:nth-of-type(2) { 
+  height: 40%; width: 100%; position: absolute; left: 0; top: 15%;
+}
+.split-main2>.row:nth-of-type(3) { 
+  height: 40%; width: 100%; position: absolute; left: 0; bottom: 5%;
+}
+.split-main2>.row:nth-of-type(4) { 
+  height: 5%; width: 100%; position: absolute; bottom: 0; left: 0;
+}
+
+.split-main1>.row:first-of-type {
+  height: 15%; width: 100%; position: absolute; top: 0; left: 0;
+}
+.split-main1>.row:nth-of-type(2) {
+  height: 80%; width: 100%; position: absolute; left: 0; bottom: 5%;
+}
+.split-main1>.row:nth-of-type(3) {
+  height: 5%; width: 100%; position: absolute; bottom: 0; left: 0;
+}
+
+.split-title>.row:first-of-type {
+  height: 35%; width: 100%; position: absolute; top: 0; left: 0;
+}
+.split-title>.row:nth-of-type(2) {
+  height: 65%; width: 100%; position: absolute; left: 0; top: 35%;
+}
+
